@@ -1,3 +1,12 @@
+server:
+  port: 8080
+
+jwt:
+  secret: ${JWT_SECRET_KEY}
+  lifetime: ${JWT_LIFETIME}
+
 spring:
+  config:
+    import: optional:file:.env[.properties]
   application:
     name: auth_service
