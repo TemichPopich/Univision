@@ -14,6 +14,8 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 
+
+// todo написать генерацию токена на основе ассиметричного ключа шифрования
 @Validated
 @ConfigurationProperties(prefix = "jwt", ignoreUnknownFields = false)
 public record JwtConfig(
