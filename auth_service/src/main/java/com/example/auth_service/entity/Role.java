@@ -18,6 +18,6 @@ public class Role {
     @Column(name = "ID")
     private UUID id;
 
-    @Column(name = "ROLE")
-    private String role;
+    @Column(name = "NAME")
+    private String name;
 }

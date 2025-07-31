@@ -2,8 +2,9 @@ server:
   port: 8080
 
 jwt:
-  secret: ${JWT_SECRET_KEY}
-  lifetime: ${JWT_LIFETIME}
+  public_key: file:auth_service/secrets/public_key.pem
+  private_key: file:auth_service/secrets/private_key.pem
+  lifetime: 24h
 
 spring:
   config:
